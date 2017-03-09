@@ -1,5 +1,9 @@
-#EnvironmentSetup
-# Before we start, "nouveau" needs to be removed.
+# EnvironmentSetup
+## Ubuntuでディープラーニングをする環境整備
+### 環境
+ - Ubuntu 
+
+#### Before we start, "nouveau" needs to be removed.
 
 
 #
