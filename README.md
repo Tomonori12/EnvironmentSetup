@@ -69,3 +69,4 @@
 
 #### 参考リンク
  - [Using GPU based on Theano and Keras](https://guozhilingblog.wordpress.com/2016/05/19/using-gpu-based-on-theano-and-keras/)
+ - [noubeau → cuda](http://qiita.com/shinya_ohtani/items/f374ed0dd51737087369)
