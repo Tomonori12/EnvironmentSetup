@@ -17,8 +17,12 @@
 ### 手順の詳細
 1. Ubuntuの準備
 
-  - [Ubuntu download](http://releases.ubuntu.com/14.04/)
+  1-1. Ubuntuのダウンロード
+  
+  - [Ubuntu download](http://releases.ubuntu.com/14.04/)
   - [Ununtu downloand mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
+
+  1-2. Ubuntuインストール
 
  <<インストールの詳細は割愛。下記に各種ツール。>>
   - USBでインストール
@@ -27,7 +31,6 @@
 
    - DVDでインストール
      - [ImgBurn](http://www.imgburn.com/)
- 
 
 2. noubeauの削除
  
@@ -39,11 +42,13 @@
   3-1. ダウンロード
     - [CUDA](https://developer.nvidia.com/cuda-downloads)
     ![ダウンロードするファイル](Select_Platform.png "ダウンロード方法")
-
+    
   3-2. インストール
-    cuda_8.0.61_375.26_linux.run
+    - Terminal内で下記を実行
+    - cuda_8.0.61_375.26_linux.run
 
 4. cuDNNのインストール
 
-https://developer.nvidia.com/cudnn
+  4-1. cuDNNのダウンロード
+    - [cuDNN](https://developer.nvidia.com/cudnn)
 
