@@ -84,8 +84,7 @@
     source ~/.bashrc
     ```
 
-  5-2. Makefileからの自動
-
+  5-2. Makefileからのインストール（自動）
     - Terminal内で下記を実行
 
     ```bash
@@ -96,7 +95,7 @@
 
   6-1. インストール（手動）
   
-    - Terminal内で下記を実行
+    - Terminal内で下記を実行
 
     ```bash
     pip install keras
@@ -104,7 +103,13 @@
     pip install tensorflow-gpu
     ```
 
-  6-2.
+  6-2. Makefileからのインストール（自動）
+
+    - Terminal内で下記を実行
+
+    ```bash
+    make pip
+    ```
     
     
     
