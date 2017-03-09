@@ -3,7 +3,7 @@
 ### 環境
  - OS: Ubuntu 14.04 LTS 64 bit
  - GPU: Nvidia GeForce GTX Titan Black (6 Gb)
- - [GeForce GTX TITAN Black](http://www.nvidia.co.jp/object/geforce-gtx-titan-black-jp.html){:target="_blank"}
+ - [GeForce GTX TITAN Black](http://www.nvidia.co.jp/object/geforce-gtx-titan-black-jp.html target="_blank")
 
 ### 手順のまとめ
 1. Ubuntuの準備
