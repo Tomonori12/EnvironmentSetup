@@ -1,11 +1,9 @@
 ## EnvironmentSetup
-## Ubuntuでディープラーニングをする環境整備
+## UbuntuでGPUを利用したディープラーニング環境整備
 ### 環境
  - OS: Ubuntu 14.04 LTS 64 bit
- - [Ubuntu download](http://releases.ubuntu.com/14.04/)
- - [Ununtu downloand mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
 
-### 手順
+### 手順のまとめ
 1. Ubuntu install
 2. noubeau（ディスプレイドライバ）の削除
 3. cudaのインストール
@@ -14,10 +12,18 @@
 6. Pythonで必要なLibraryのインストール
 
 
-#### Before we start, "nouveau" needs to be removed.
+### 手順の詳細
+1. Ubuntu install
+ -[Ubuntu download](http://releases.ubuntu.com/14.04/)
+ -[Ununtu downloand mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
+
+**
 
 
-#
+
+
+
+ 
 https://developer.nvidia.com/cuda-downloads
 cuda_8.0.61_375.26_linux.run
 
