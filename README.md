@@ -19,7 +19,7 @@
   1-1. Ubuntuのダウンロード
   
   - [Ubuntu download](http://releases.ubuntu.com/14.04/)
-  - [Ununtu downloand mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
+  - [Ubuntu download mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
 
   1-2. Ubuntuインストール <<インストールの詳細は割愛。下記に各種ツール。>>
   - USBでインストール
@@ -75,12 +75,29 @@
 
 5. Anacondaのインストール
 
+  5-1. インストール（手動）
+    - Terminal内で下記を実行
+   
+    ```bash
+    wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
+    bash ./Anaconda3-4.3.0-Linux-x86_64.sh
+    source ~/.bashrc
+    ```
+
+  5-2. Makefileからの自動
+
+    - Terminal内で下記を実行
+
+```bash
+make install
+```
+
 6. Pythonで必要なLibraryのインストール
-
-
 
 
 
 #### 参考リンク
  - [Using GPU based on Theano and Keras](https://guozhilingblog.wordpress.com/2016/05/19/using-gpu-based-on-theano-and-keras/)
  - [noubeau → cuda](http://qiita.com/shinya_ohtani/items/f374ed0dd51737087369)
+
+
