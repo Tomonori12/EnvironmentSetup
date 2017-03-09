@@ -30,9 +30,15 @@
      - [ImgBurn](http://www.imgburn.com/)
 
 2. noubeauの削除
- 
-
-
+  - /etc/modprobe.d/blacklist-nouveau.conf
+  
+  ```bash
+  blacklist nouveau
+  blacklist lbm-nouveau
+  options nouveau modeset=0
+  alias nouveau off
+  alias lbm-nouveau off
+  ```
 
 3. CUDAのインストール
 
