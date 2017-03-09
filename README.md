@@ -14,10 +14,9 @@
 
 ### 手順の詳細
 1. Ubuntu install
- -[Ubuntu download](http://releases.ubuntu.com/14.04/)
- -[Ununtu downloand mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
+ - [Ubuntu download](http://releases.ubuntu.com/14.04/)
+ - [Ununtu downloand mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
 
-**
 
 
 
