@@ -22,9 +22,7 @@
   - [Ubuntu download](http://releases.ubuntu.com/14.04/)
   - [Ununtu downloand mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
 
-  1-2. Ubuntuインストール
-
- <<インストールの詳細は割愛。下記に各種ツール。>>
+  1-2. Ubuntuインストール <<インストールの詳細は割愛。下記に各種ツール。>>
   - USBでインストール
     - [UNetbootin](https://unetbootin.github.io/)
     - [Linux Live](https://www.linuxliveusb.com/)
