@@ -44,8 +44,8 @@
     ![ダウンロードするファイル](Select_Platform.png "ダウンロード方法")
     
   3-2. インストール
-    - Terminal内で下記を実行
-    - cuda_8.0.61_375.26_linux.run
+    - Terminal内で下記を実行
+    - sudo sh cuda_8.0.61_375.26_linux.run
 
 4. cuDNNのインストール
 
