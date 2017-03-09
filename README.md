@@ -58,7 +58,7 @@
 
   3-1. ダウンロード
     - [CUDA](https://developer.nvidia.com/cuda-downloads)
-    ![ダウンロードするファイル](Select_Platform.png "ダウンロード方法")
+    ![CUDAファイル](Select_Platform.png "Linux>>x86_64>>Ubuntu>>14.04>>runfile (local)")
     
   3-2. インストール
     - Terminal内で下記を実行
@@ -71,6 +71,8 @@
 
   4-1. cuDNNのダウンロード
     - [cuDNN](https://developer.nvidia.com/cudnn)
+    
+    ![cuDNN](cuDNN_v5.1_Runtime.png "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)")
 
 
 5. Anacondaのインストール
