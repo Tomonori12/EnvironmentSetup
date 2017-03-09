@@ -56,7 +56,7 @@
 
 3. CUDA 8.0のインストール
 
-  3-1. ダウンロード
+  3-1. ダウンロード(https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run)
     - [CUDA](https://developer.nvidia.com/cuda-downloads)
     ![CUDAファイル](Select_Platform.png "Linux>>x86_64>>Ubuntu>>14.04>>runfile (local)")
     
