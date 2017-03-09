@@ -54,7 +54,7 @@
 
 
 
-3. CUDAのインストール
+3. CUDA 8.0のインストール
 
   3-1. ダウンロード
     - [CUDA](https://developer.nvidia.com/cuda-downloads)
