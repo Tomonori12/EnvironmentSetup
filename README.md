@@ -9,7 +9,7 @@
 1. Ubuntu install
 2. noubeau（ディスプレイドライバ）の削除
 3. CUDAのインストール
-4. uuDNNのインストール
+4. cuDNNのインストール
 5. Anacondaのインストール
 6. Pythonで必要なLibraryのインストール
 
@@ -37,6 +37,8 @@
 
   3-1. ダウンロード
     - [CUDA](https://developer.nvidia.com/cuda-downloads)
+![ダウンロードするファイル](Select_Platform.png "ダウンロード")
+
  
   3-2. インストール
     cuda_8.0.61_375.26_linux.run
