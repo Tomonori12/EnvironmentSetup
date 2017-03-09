@@ -1,4 +1,4 @@
-## UbuntuでGPUを利用したディープラーニング環境整備
+## UbuntuでGPUを利用したディープラーニング環境整備 (2017-March-10)
 ### 環境
  - OS: Ubuntu 14.04 LTS 64 bit
  - GPU: Nvidia GeForce GTX Titan Black (6 Gb)
@@ -11,7 +11,7 @@
 4. cuDNNのインストール
 5. Anacondaのインストール
 6. Pythonで必要なLibraryのインストール
-
+7. MNISTデータセットの取得
 
 ### 手順の詳細
 1. Ubuntuの準備
@@ -111,9 +111,28 @@
     make pip
     ```
     
-    
-    
-    
+    
+7. MNISTデータセットの取得
+
+  7-1. 手動で取得
+   - [Mnist](https://github.com/fchollet/keras)
+
+  7-2.
+
+    ```bash
+    git clone https://github.com/fchollet/keras
+    ```
+
+
+  7-3. 
+
+    ```bash
+    make git
+    ```
+
+
+
+
 #### 参考リンク
  - [Using GPU based on Theano and Keras](https://guozhilingblog.wordpress.com/2016/05/19/using-gpu-based-on-theano-and-keras/)
  - [noubeau → cuda](http://qiita.com/shinya_ohtani/items/f374ed0dd51737087369)
