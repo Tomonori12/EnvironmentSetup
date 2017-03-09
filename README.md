@@ -1,4 +1,4 @@
-## UbuntuでGPUを利用したディープラーニング環境整備 (2017-March-10)
+## [作業中] UbuntuでGPUを利用したディープラーニング環境整備 (2017-March-10)
 ### 環境
  - OS: Ubuntu 14.04 LTS 64 bit
  - GPU: Nvidia GeForce GTX Titan Black (6 Gb)
