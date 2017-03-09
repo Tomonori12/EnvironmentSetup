@@ -19,7 +19,7 @@
 
   1-1. Ubuntuのダウンロード
   
-  - [Ubuntu download](http://releases.ubuntu.com/14.04/)
+  - [Ubuntu download](http://releases.ubuntu.com/14.04/)
   - [Ununtu downloand mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
 
   1-2. Ubuntuインストール
@@ -55,3 +55,7 @@
   4-1. cuDNNのダウンロード
     - [cuDNN](https://developer.nvidia.com/cudnn)
 
+
+5. Anacondaのインストール
+
+6. 
