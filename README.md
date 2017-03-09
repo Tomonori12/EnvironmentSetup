@@ -14,32 +14,30 @@
 
 ### 手順の詳細
 1. Ubuntu install
- - [Ubuntu download](http://releases.ubuntu.com/14.04/)
- - [Ununtu downloand mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
+  - [Ubuntu download](http://releases.ubuntu.com/14.04/)
+  - [Ununtu downloand mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
 
-　インストールの詳細は割愛。下記に各種ツール。
- - USBでインストール
-  - [UNetbootin](https://unetbootin.github.io/)
-  - [Linux Live](https://www.linuxliveusb.com/)
+    インストールの詳細は割愛。下記に各種ツール。
+  - USBでインストール
+    - [UNetbootin](https://unetbootin.github.io/)
+    - [Linux Live](https://www.linuxliveusb.com/)
 
- - DVDでインストール
-  - [ImgBurn](http://www.imgburn.com/)
+   - DVDでインストール
+    - [ImgBurn](http://www.imgburn.com/)
  
 
 2. noubeauの削除
-
+ 
 
 
 
 3. CUDAのインストール
 
- 3-1. ダウンロード
-  - [CUDA](https://developer.nvidia.com/cuda-downloads)
+  3-1. ダウンロード
+    - [CUDA](https://developer.nvidia.com/cuda-downloads)
  
- 3-2. インストール
-  cuda_8.0.61_375.26_linux.run
-
-
+  3-2. インストール
+    cuda_8.0.61_375.26_linux.run
 
 https://developer.nvidia.com/cudnn
 
