@@ -88,9 +88,9 @@
 
     - Terminal内で下記を実行
 
-```bash
-make install
-```
+    ```bash
+    make install
+    ```
 
 6. Pythonで必要なLibraryのインストール
 
