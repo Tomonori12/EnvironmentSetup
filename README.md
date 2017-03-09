@@ -2,6 +2,8 @@
 ## UbuntuでGPUを利用したディープラーニング環境整備
 ### 環境
  - OS: Ubuntu 14.04 LTS 64 bit
+ - GPU: Nvidia GeForce GTX Titan Black (6 Gb)
+ - [GeForce GTX TITAN Black](http://www.nvidia.co.jp/object/geforce-gtx-titan-black-jp.html)
 
 ### 手順のまとめ
 1. Ubuntu install
