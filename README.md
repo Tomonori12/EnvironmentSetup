@@ -57,5 +57,9 @@
 
 6. Pythonで必要なLibraryのインストール
 
+
+
+
+
 #### 参考リンク
  - [Using GPU based on Theano and Keras](https://guozhilingblog.wordpress.com/2016/05/19/using-gpu-based-on-theano-and-keras/)
