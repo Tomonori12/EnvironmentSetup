@@ -39,6 +39,20 @@
   alias nouveau off
   alias lbm-nouveau off
   ```
+ - /etc/modprobe.d/nouveau-kms.conf
+ 
+  ```bash
+  options nouveau modeset=0
+  ```
+  
+ - terminal内で下記を実行
+ 
+  ```bash
+  sudo update-initramfs -u
+  sudo reboot
+  ```
+
+
 
 3. CUDAのインストール
 
