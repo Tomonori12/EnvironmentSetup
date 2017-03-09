@@ -1,4 +1,3 @@
-## EnvironmentSetup
 ## UbuntuでGPUを利用したディープラーニング環境整備
 ### 環境
  - OS: Ubuntu 14.04 LTS 64 bit
@@ -56,4 +55,7 @@
 
 5. Anacondaのインストール
 
-6. 
+6. Pythonで必要なLibraryのインストール
+
+#### 参考リンク
+![Using GPU based on Theano and Keras](https://guozhilingblog.wordpress.com/2016/05/19/using-gpu-based-on-theano-and-keras/)
