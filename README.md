@@ -21,7 +21,7 @@
   - [Ubuntu download](http://releases.ubuntu.com/14.04/)
   - [Ubuntu download mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
 
-  1-2. Ubuntuインストール <<インストールの詳細は割愛。下記に各種ツール。>>
+  1-2. Ubuntuインストール <<詳細は割愛。下記に各種ツール。>>
   - USBでインストール
     - [UNetbootin](https://unetbootin.github.io/)
     - [Linux Live](https://www.linuxliveusb.com/)
@@ -94,8 +94,21 @@
 
 6. Pythonで必要なLibraryのインストール
 
+  6-1. インストール（手動）
+  
+    - Terminal内で下記を実行
 
+    ```bash
+    pip install keras
+    pip install tensorflow
+    pip install tensorflow-gpu
+    ```
 
+  6-2.
+    
+    
+    
+    
 #### 参考リンク
  - [Using GPU based on Theano and Keras](https://guozhilingblog.wordpress.com/2016/05/19/using-gpu-based-on-theano-and-keras/)
  - [noubeau → cuda](http://qiita.com/shinya_ohtani/items/f374ed0dd51737087369)
