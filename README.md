@@ -6,7 +6,7 @@
 
 ### 手順のまとめ
 1. Ubuntuの準備
-2. noubeau（ディスプレイドライバ）の削除
+2. nouveau（ディスプレイドライバ）の削除
 3. CUDA 8.0のインストール
 4. cuDNNのインストール
 5. Anacondaのインストール
@@ -29,7 +29,7 @@
    - DVDでインストール
      - [ImgBurn](http://www.imgburn.com/)
 
-2. noubeauの削除
+2. nouveauの削除
   - /etc/modprobe.d/blacklist-nouveau.conf
   
   ```bash
@@ -51,7 +51,6 @@
   sudo update-initramfs -u
   sudo reboot
   ```
-
 
 
 3. CUDA 8.0のインストール
@@ -119,7 +118,7 @@
   7-1. 手動で取得
    - [Mnist](https://github.com/fchollet/keras)
 
-  7-2.
+  7-2. 
 
     ```bash
     git clone https://github.com/fchollet/keras
