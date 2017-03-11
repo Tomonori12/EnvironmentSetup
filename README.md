@@ -1,12 +1,11 @@
-## [作業中] UbuntuでGPUを利用したディープラーニング環境整備 (2017-March-10)
+## [作業中] UbuntuでGPUを利用したディープラーニング環境整備
 ### 環境
  - OS: Ubuntu 14.04 LTS 64 bit
  - GPU: Nvidia GeForce GTX Titan Black (6 Gb)
  - [GeForce GTX TITAN Black](http://www.nvidia.co.jp/object/geforce-gtx-titan-black-jp.html)
 
 ### 作業の前に…
-　作業に移るとMakefileを利用したい場合は、Makefileをダウンロードしておくこと。
-バージョン更新によりリンク切れに注意しべし！
+　作業の前に、自動で各処理を記載しているMakefileを利用したい場合は、Makefileをダウンロードしておくこと。だが、バージョン更新によりリンク切れに注意しべし！本インストラクションには、自動と手動の両方のスクリプトを記載。Makefileがだめな場合は随時対応して下さいませ。
 
 ### 手順のまとめ
 1. Ubuntuの準備
@@ -61,8 +60,8 @@
 
   - 上記３行程が完了後、再起動中にgrub画面で「e」を連打！
   - 画面に表示される「quiet splash」に「quiet splash text」
-  - 上記入力後、F10でCUI画面の表示
-  - CUDAのインストールへと移る。
+  - 上記入力後、F10でCUI画面の表示されるので、ユーザー名とパスワードでログイン。
+  - CUDAのインストールへと進む。
 
 3. CUDA 8.0のインストール
 
