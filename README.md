@@ -30,7 +30,7 @@
     - [UNetbootin](https://unetbootin.github.io/)
     - [Linux Live](https://www.linuxliveusb.com/)
 
-   - DVDでインストール
+  - DVDでインストール
     - [ImgBurn](http://www.imgburn.com/)
 
 2. nouveauの削除
