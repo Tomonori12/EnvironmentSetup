@@ -31,7 +31,7 @@
     - [Linux Live](https://www.linuxliveusb.com/)
 
    - DVDでインストール
-     - [ImgBurn](http://www.imgburn.com/)
+    - [ImgBurn](http://www.imgburn.com/)
 
 2. nouveauの削除
   - nouveauの削除はCUIで行う。下記設定後、CUI起動へ進む。
@@ -64,7 +64,6 @@
   - 上記入力後、F10でCUI画面の表示
   - CUDAのインストールへと移る。
 
-
 3. CUDA 8.0のインストール
 
   3-1. ダウンロード（手動）
@@ -93,7 +92,6 @@
     - [cuDNN](https://developer.nvidia.com/cudnn)
 
     ![cuDNN](cuDNN_v5.1_Runtime.png "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)")
-
 
 5. Anacondaのインストール
 
@@ -132,7 +130,6 @@
     ```bash
     make pip
     ```
-
     
 7. MNISTデータセットの取得
 
@@ -157,4 +154,4 @@
 #### 参考リンク
  - [Using GPU based on Theano and Keras](https://guozhilingblog.wordpress.com/2016/05/19/using-gpu-based-on-theano-and-keras/)
  - [noubeau → cuda](http://qiita.com/shinya_ohtani/items/f374ed0dd51737087369)
- - [^1]: [CUI起動](https://kokufu.blogspot.jp/2016/01/for-ubuntu.html?m=1)
+ - [CUI起動](https://kokufu.blogspot.jp/2016/01/for-ubuntu.html?m=1)
