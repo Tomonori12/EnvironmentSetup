@@ -30,7 +30,9 @@
      - [ImgBurn](http://www.imgburn.com/)
 
 2. nouveauの削除
-  - nouveauの削除はCUIで行う。下記設定後、CUI起動が必要。
+  - nouveauの削除はCUIで行う。下記設定後、CUI起動へ進む。
+
+    **ただし、nouveauの削除とCUDAのインストールは連続して行うので、手動でダウンロード・インストールする場合は、先にファイル「cuda_8.0.61_375.26_linux.run」のダウンロードが必要（参照: 3-1&3-2）。**
   - /etc/modprobe.d/blacklist-nouveau.conf
 
   ```bash
@@ -46,28 +48,39 @@
   options nouveau modeset=0
   ```
 
- - terminal内で下記を実行
+ - Terminal内で下記を実行
 
   ```bash
   sudo update-initramfs -u
   sudo reboot
   ```
 
-  - CUI起動に移る。CUIはgrub画面で「e」を連打！
+  - 上記３行程が完了後、再起動中にgrub画面で「e」を連打！
   - 画面に表示される「quiet splash」に「quiet splash text」
-  - 上記入力後、F10でCUI起動
+  - 上記入力後、F10でCUI画面の表示
+  - CUDAのインストールへと移る。
+
 
 3. CUDA 8.0のインストール
 
-  3-1. ダウンロード(https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run)
+  3-1. ダウンロード（手動）
     - [CUDA](https://developer.nvidia.com/cuda-downloads)
-    ![CUDAファイル](Select_Platform.png "Linux>>x86_64>>Ubuntu>>14.04>>runfile (local)")
+    - ダウンロード場所：　Linux > x86_64 > Ubuntu>>14.04 > runfile (local)
+    - [ダイレクトダウンロードリンク](https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run)
+    ![CUDAファイル](Select_Platform.png "Linux > x86_64 > Ubuntu>>14.04 > runfile (local)")
 
-  3-2. インストール
+  3-2. インストール（手動）
     - Terminal内で下記を実行
 
     ```bash
     sudo sh cuda_8.0.61_375.26_linux.run
+    ```
+
+  3-3. Makefileでインストール（自動）
+    - Terminal内で下記を実行
+
+    ```bash
+    make cudainstall
     ```
 
 4. cuDNNのインストール
@@ -93,7 +106,7 @@
     - Terminal内で下記を実行
 
     ```bash
-    make install
+    make anainstall
     ```
 
 6. Pythonで必要なLibraryのインストール
@@ -137,7 +150,7 @@
 
 
 
-
 #### 参考リンク
  - [Using GPU based on Theano and Keras](https://guozhilingblog.wordpress.com/2016/05/19/using-gpu-based-on-theano-and-keras/)
  - [noubeau → cuda](http://qiita.com/shinya_ohtani/items/f374ed0dd51737087369)
+ - [^1]: [CUI起動](https://kokufu.blogspot.jp/2016/01/for-ubuntu.html?m=1)
