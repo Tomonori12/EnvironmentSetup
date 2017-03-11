@@ -4,6 +4,10 @@
  - GPU: Nvidia GeForce GTX Titan Black (6 Gb)
  - [GeForce GTX TITAN Black](http://www.nvidia.co.jp/object/geforce-gtx-titan-black-jp.html)
 
+### 作業の前に…
+　作業に移るとMakefileを利用したい場合は、Makefileをダウンロードしておくこと。
+バージョン更新によりリンク切れに注意しべし！
+
 ### 手順のまとめ
 1. Ubuntuの準備
 2. nouveau（ディスプレイドライバ）の削除
