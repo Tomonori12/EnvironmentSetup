@@ -17,7 +17,7 @@
 1. Ubuntuの準備
 
   1-1. Ubuntuのダウンロード
-  
+
   - [Ubuntu download](http://releases.ubuntu.com/14.04/)
   - [Ubuntu download mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
 
@@ -30,8 +30,9 @@
      - [ImgBurn](http://www.imgburn.com/)
 
 2. nouveauの削除
+  - nouveauの削除はCUIで行う。下記設定後、CUI起動が必要。
   - /etc/modprobe.d/blacklist-nouveau.conf
-  
+
   ```bash
   blacklist nouveau
   blacklist lbm-nouveau
@@ -40,28 +41,31 @@
   alias lbm-nouveau off
   ```
  - /etc/modprobe.d/nouveau-kms.conf
- 
+
   ```bash
   options nouveau modeset=0
   ```
-  
+
  - terminal内で下記を実行
- 
+
   ```bash
   sudo update-initramfs -u
   sudo reboot
   ```
 
+  - CUI起動に移る。CUIはgrub画面で「e」を連打！
+  - 画面に表示される「quiet splash」に「quiet splash text」
+  - 上記入力後、F10でCUI起動
 
 3. CUDA 8.0のインストール
 
   3-1. ダウンロード(https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run)
     - [CUDA](https://developer.nvidia.com/cuda-downloads)
     ![CUDAファイル](Select_Platform.png "Linux>>x86_64>>Ubuntu>>14.04>>runfile (local)")
-    
+
   3-2. インストール
     - Terminal内で下記を実行
-    
+
     ```bash
     sudo sh cuda_8.0.61_375.26_linux.run
     ```
@@ -70,7 +74,7 @@
 
   4-1. cuDNNのダウンロード
     - [cuDNN](https://developer.nvidia.com/cudnn)
-    
+
     ![cuDNN](cuDNN_v5.1_Runtime.png "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)")
 
 
@@ -78,7 +82,7 @@
 
   5-1. インストール（手動）
     - Terminal内で下記を実行
-   
+
     ```bash
     wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
     bash ./Anaconda3-4.3.0-Linux-x86_64.sh
@@ -95,7 +99,7 @@
 6. Pythonで必要なLibraryのインストール
 
   6-1. インストール（手動）
-  
+
     - Terminal内で下記を実行
 
     ```bash
@@ -111,21 +115,21 @@
     ```bash
     make pip
     ```
-    
+
     
 7. MNISTデータセットの取得
 
   7-1. 手動で取得
    - [Mnist](https://github.com/fchollet/keras)
 
-  7-2. 
+  7-2. クローン（手動作成）
 
     ```bash
     git clone https://github.com/fchollet/keras
     ```
 
 
-  7-3. 
+  7-3. クローン（自動作成）
 
     ```bash
     make git
@@ -137,5 +141,3 @@
 #### 参考リンク
  - [Using GPU based on Theano and Keras](https://guozhilingblog.wordpress.com/2016/05/19/using-gpu-based-on-theano-and-keras/)
  - [noubeau → cuda](http://qiita.com/shinya_ohtani/items/f374ed0dd51737087369)
-
-
