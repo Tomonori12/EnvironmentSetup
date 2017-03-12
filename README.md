@@ -17,6 +17,7 @@
 5. Anacondaのインストール
 6. Pythonで必要なLibraryのインストール
 7. MNISTデータセットの取得
+8. mnist_cnn.pyを走らせる
 
 ### 手順の詳細
 1. Ubuntuの準備
@@ -37,7 +38,7 @@
 2. nouveauの削除
   - nouveauの削除は、下記設定後、CUI起動へ進む。
 
-    **nouveauの削除とCUDAのインストールは連続して行うので、手動でダウンロード・インストールする場合は、先にファイル「cuda_8.0.61_375.26_linux.run」のダウンロードが必要（参照: 3-1&3-2）。**
+    **nouveauの削除とCUDAのインストールは連続して行うので、手動でダウンロード・インストールする場合は、先にファイル「cuda_8.0.61_375.26_linux.run」のダウンロードが必要（参照: 3-1&3-2）。ファイル容量1Gb超なので、先にダウンロードしておくことを推奨。**
   - /etc/modprobe.d/blacklist-nouveau.conf
   ```bash
   blacklist nouveau
@@ -65,6 +66,10 @@
   - CUDAのインストールへと進む。
 
 3. CUDA 8.0のインストール
+  - 【注意】インストール時にコンパイル作業があるため、g++のインストールされている必要がある。インストールされていない場合は下記をTerminalで実行。
+  ```bash
+  sudo apt-get install g++
+  ```
 
   3-1. ダウンロード（手動）
     - [CUDA](https://developer.nvidia.com/cuda-downloads)
@@ -88,7 +93,7 @@
 
 4. cuDNNのインストール
 
-  4-1. cuDNNのダウンロード
+  4-1. cuDNNのダウンロード（Nvidiaアカウント必須）
     - [cuDNN](https://developer.nvidia.com/cudnn)
     - ダウンロードファイル: cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)
 
@@ -98,6 +103,7 @@
 
   5-1. インストール（手動）
     - Terminal内で下記を実行
+    - 【注意】インストール途中で表示されるパスに関する答えはyesと入力すること
 
     ```bash
     wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
@@ -127,7 +133,6 @@
   6-2. Makefileからのインストール（自動）
 
     - Terminal内で下記を実行
-
     ```bash
     make pip
     ```
@@ -138,18 +143,29 @@
    - [Mnist](https://github.com/fchollet/keras)
 
   7-2. クローン（手動作成）
-
+  - Terminal内で下記を実行
     ```bash
     git clone https://github.com/fchollet/keras
     ```
 
   7-3. クローン（自動作成）
-
+  - Terminal内で下記を実行
     ```bash
     make git
     ```
+8. mnist_cnn.pyを走らせる
 
+  - Terminal内で下記を実行
+  ```bash
+  python ./keras/examples/mnist_cnn.py
+  ```
 
+### ハマりポイント
+  - Q: pythonが起動しないんですけど？
+  - A: おそらく、Anacondaのインストール中にパスを通す選択をYesにしなくて、パスがパスが通っていないのでパスを通そう。原因が怪しい時は、作成されたanaconda3のフォルダを削除してまたインストールした方が楽かも？
+
+  - Q: mnist_cnn.pyがコケる
+  - A: エラーメッセージをよく見てみる。pip uninstall tensorflow tensorflow-gpuをして、再度インストールしてみると良いかも。GPUが搭載されていないPCだと、tensorflow-gpuのライブラリは不要。入ってるとおかしな事になるかも？
 
 #### 参考リンク
  - [Using GPU based on Theano and Keras](https://guozhilingblog.wordpress.com/2016/05/19/using-gpu-based-on-theano-and-keras/)
