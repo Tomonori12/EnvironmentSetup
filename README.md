@@ -5,7 +5,9 @@
  - [GeForce GTX TITAN Black](http://www.nvidia.co.jp/object/geforce-gtx-titan-black-jp.html)
 
 ### 作業の前に…
-　作業の前に、自動で各処理を記載しているMakefileを利用したい場合は、Makefileをダウンロードしておくこと。だが、バージョン更新によりリンク切れに注意しべし！本インストラクションには、自動と手動の両方のスクリプトを記載。Makefileがだめな場合は随時対応して下さいませ。
+　自動で各処理を記載しているMakefileを利用したい場合は、Makefileをダウンロードして任意のフォルダに保存。ただし、バージョン更新によりリンク切れに注意すべし。
+
+　本インストラクションには、手動およびMakefileファイルによる自動セットアップの両スクリプトを記載。Makefileがダメな場合は随時、手動にて対応のこと。
 
 ### 手順のまとめ
 1. Ubuntuの準備
@@ -89,6 +91,7 @@
 
   4-1. cuDNNのダウンロード
     - [cuDNN](https://developer.nvidia.com/cudnn)
+    - ダウンロードファイル（cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)）
 
     ![cuDNN](cuDNN_v5.1_Runtime.png "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)")
 
