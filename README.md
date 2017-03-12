@@ -1,7 +1,7 @@
 ## UbuntuでGPUを利用したディープラーニング環境整備
 ### 環境
  - OS: Ubuntu 14.04 LTS 64 bit
- - GPU: Nvidia GeForce GTX Titan Black (6 Gb)
+ - GPU: Nvidia GeForce GTX Titan Black (6Gb)
  - [GeForce GTX TITAN Black](http://www.nvidia.co.jp/object/geforce-gtx-titan-black-jp.html)
 
 ### 作業の前に…
@@ -60,7 +60,7 @@
   sudo reboot
   ```
 
-  - 上記３ステップが完了後、再起動中にgrub画面で「e」を連打！
+  - 上記３ステップが完了後、再起動中にgrub画面で「e」を1度だけ押す！
   - 画面に表示される「quiet splash」を「quiet splash **text**」と変更
   - 上記入力後、**F10** でCUI画面の表示されるので、ユーザー名とパスワードでログイン。
   - CUDAのインストールへと進む。
