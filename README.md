@@ -1,4 +1,4 @@
-## [作業中] UbuntuでGPUを利用したディープラーニング環境整備
+## UbuntuでGPUを利用したディープラーニング環境整備
 ### 環境
  - OS: Ubuntu 14.04 LTS 64 bit
  - GPU: Nvidia GeForce GTX Titan Black (6 Gb)
@@ -35,11 +35,10 @@
     - [ImgBurn](http://www.imgburn.com/)
 
 2. nouveauの削除
-  - nouveauの削除はCUIで行う。下記設定後、CUI起動へ進む。
+  - nouveauの削除は、下記設定後、CUI起動へ進む。
 
     **nouveauの削除とCUDAのインストールは連続して行うので、手動でダウンロード・インストールする場合は、先にファイル「cuda_8.0.61_375.26_linux.run」のダウンロードが必要（参照: 3-1&3-2）。**
   - /etc/modprobe.d/blacklist-nouveau.conf
-
   ```bash
   blacklist nouveau
   blacklist lbm-nouveau
@@ -47,22 +46,22 @@
   alias nouveau off
   alias lbm-nouveau off
   ```
+  　上記ファイルはダウンロードも本リポジトリから取得可能。/etc/modprobe.dにコピるだけでOK
  - /etc/modprobe.d/nouveau-kms.conf
-
   ```bash
   options nouveau modeset=0
   ```
+  　上記ファイルはダウンロードも本リポジトリから取得可能。/etc/modprobe.dにコピるだけでOK
 
  - Terminal内で下記を実行
-
   ```bash
   sudo update-initramfs -u
   sudo reboot
   ```
 
-  - 上記３行程が完了後、再起動中にgrub画面で「e」を連打！
-  - 画面に表示される「quiet splash」に「quiet splash text」
-  - 上記入力後、F10でCUI画面の表示されるので、ユーザー名とパスワードでログイン。
+  - 上記３ステップが完了後、再起動中にgrub画面で「e」を連打！
+  - 画面に表示される「quiet splash」を「quiet splash **text**」と変更
+  - 上記入力後、**F10** でCUI画面の表示されるので、ユーザー名とパスワードでログイン。
   - CUDAのインストールへと進む。
 
 3. CUDA 8.0のインストール
@@ -91,7 +90,7 @@
 
   4-1. cuDNNのダウンロード
     - [cuDNN](https://developer.nvidia.com/cudnn)
-    - ダウンロードファイル（cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)）
+    - ダウンロードファイル: cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)
 
     ![cuDNN](cuDNN_v5.1_Runtime.png "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)")
 
@@ -143,7 +142,6 @@
     ```bash
     git clone https://github.com/fchollet/keras
     ```
-
 
   7-3. クローン（自動作成）
 
