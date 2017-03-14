@@ -1,7 +1,7 @@
-#Time-stamp: <2017-03-09 16:12:50 hoshi>
+#Time-stamp: <2017-03-14 15:25:53 hoshi>
 
-#INSDIR_KERAS = ../keras
-INSDIR_KERAS = ./keras
+OUTDIR_KERAS = ../keras
+#INSDIR_KERAS = ./keras
 
 anainstall:
 	wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
@@ -21,7 +21,7 @@ pip:
 
 
 git:
-	git clone https://github.com/fchollet/keras $(INSDIR_KERAS)
+	git clone https://github.com/fchollet/keras $(OUTDIR_KERAS)
 
 clean:
 	rm -rf *~ .*~
