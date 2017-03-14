@@ -152,12 +152,14 @@
 
   7-2. クローン（手動作成）
   - Terminal内で下記を実行
+
     ```bash
     git clone https://github.com/fchollet/keras
     ```
 
   7-3. クローン（自動作成）
   - Terminal内で下記を実行
+
     ```bash
     make git
     ```
