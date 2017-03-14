@@ -166,7 +166,6 @@
 8. mnist_cnn.pyを走らせる
 
   - Terminal内で下記を実行
-  
   ```bash
   python ./keras/examples/mnist_cnn.py
   ```
