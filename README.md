@@ -141,6 +141,7 @@
   6-2. Makefileからのインストール（自動）
 
     - Terminal内で下記を実行
+
     ```bash
     make pip
     ```
