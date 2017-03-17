@@ -79,6 +79,7 @@
   ![CUDAファイル](Select_Platform.png "Linux > x86_64 > Ubuntu>>14.04 > runfile (local)")
 
   3-2. インストール（手動）
+  
   - Terminal内で下記を実行
   ```bash
   sudo sh cuda_8.0.61_375.26_linux.run
