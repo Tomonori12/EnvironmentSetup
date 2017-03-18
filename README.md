@@ -89,6 +89,7 @@
   3-3. Makefileでインストール（自動）
 
     - Terminal内で下記を実行
+
     ```bash
     make cudainstall
     ```
@@ -96,6 +97,7 @@
   3-4. Pathを.bashrcに加える。【この.bashrcはhomeディレクトリの.bashrcに書き込む】
 
     - .bashrc
+
     ```bash
     export PATH=/usr/local/cuda-8.0/bin:$PATH
     export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
