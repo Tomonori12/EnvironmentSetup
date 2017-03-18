@@ -82,6 +82,7 @@
   3-2. インストール（手動）
 
   - Terminal内で下記を実行
+
   ```bash
   sudo sh cuda_8.0.61_375.26_linux.run
   ```
