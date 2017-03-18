@@ -72,6 +72,7 @@
   ```
 
   3-1. ダウンロード（手動）
+
   - [CUDA](https://developer.nvidia.com/cuda-downloads)
   - ダウンロード場所：　Linux > x86_64 > Ubuntu>>14.04 > runfile (local)
   - [ダイレクトダウンロードリンク](https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run)
@@ -79,22 +80,22 @@
   ![CUDAファイル](Select_Platform.png "Linux > x86_64 > Ubuntu>>14.04 > runfile (local)")
 
   3-2. インストール（手動）
-  
+
   - Terminal内で下記を実行
   ```bash
   sudo sh cuda_8.0.61_375.26_linux.run
   ```
 
   3-3. Makefileでインストール（自動）
-    - Terminal内で下記を実行
 
+    - Terminal内で下記を実行
     ```bash
     make cudainstall
     ```
 
-  3-4. Pathを.bashrcに加える。
-    - .bashrc
+  3-4. Pathを.bashrcに加える。【この.bashrcはhomeディレクトリの.bashrcに書き込む】
 
+    - .bashrc
     ```bash
     export PATH=/usr/local/cuda-8.0/bin:$PATH
     export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
@@ -103,6 +104,7 @@
 4. cuDNNのインストール
 
   4-1. cuDNNのダウンロード（Nvidiaアカウント必須）
+
     - [cuDNN](https://developer.nvidia.com/cudnn)
     - ダウンロードファイル: cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)
 
@@ -111,6 +113,7 @@
 5. Anacondaのインストール
 
   5-1. インストール（手動）
+
     - Terminal内で下記を実行
     - 【注意】インストール途中で表示されるパスに関する答えはyesと入力すること
 
@@ -121,6 +124,7 @@
     ```
 
   5-2. Makefileからのインストール（自動）
+
     - Terminal内で下記を実行
 
     ```bash
@@ -150,9 +154,11 @@
 7. MNISTデータセットの取得
 
   7-1. 手動で取得
+
    - [Mnist](https://github.com/fchollet/keras)
 
   7-2. クローン（手動作成）
+
   - Terminal内で下記を実行
 
     ```bash
@@ -160,6 +166,7 @@
     ```
 
   7-3. クローン（自動作成）
+
   - Terminal内で下記を実行
 
     ```bash
