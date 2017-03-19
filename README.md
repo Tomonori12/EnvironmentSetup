@@ -22,12 +22,12 @@
 ### 手順の詳細
 1. Ubuntuの準備
 
-  1-1. Ubuntuのダウンロード
+ 1-1. Ubuntuのダウンロード
 
   - [Ubuntu download](http://releases.ubuntu.com/14.04/)
   - [Ubuntu download mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
 
-  1-2. Ubuntuインストール <<詳細は割愛。下記に各種ツール。>>
+ 1-2. Ubuntuインストール <<詳細は割愛。下記に各種ツール。>>
   - USBでインストール
     - [UNetbootin](https://unetbootin.github.io/)
     - [Linux Live](https://www.linuxliveusb.com/)
@@ -87,16 +87,14 @@
   ```
 
   3-3. Makefileでインストール（自動）
-
-    - Terminal内で下記を実行
+  - Terminal内で下記を実行
 
     ```bash
     make cudainstall
     ```
 
   3-4. Pathを.bashrcに加える。【この.bashrcはhomeディレクトリの.bashrcに書き込む】
-
-    - .bashrc
+  - .bashrc
 
     ```bash
     export PATH=/usr/local/cuda-8.0/bin:$PATH
@@ -106,18 +104,17 @@
 4. cuDNNのインストール
 
   4-1. cuDNNのダウンロード（Nvidiaアカウント必須）
-
-    - [cuDNN](https://developer.nvidia.com/cudnn)
-    - ダウンロードファイル: cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)
-
-    ![cuDNN](cuDNN_v5.1_Runtime.png "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)")
+  
+  - [cuDNN](https://developer.nvidia.com/cudnn)
+  - ダウンロードファイル: cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)
+   ![cuDNN](cuDNN_v5.1_Runtime.png "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)")
 
 5. Anacondaのインストール
 
   5-1. インストール（手動）
-
-    - Terminal内で下記を実行
-    - 【注意】インストール途中で表示されるパスに関する答えはyesと入力すること
+  
+  - Terminal内で下記を実行
+  - 【注意】インストール途中で表示されるパスに関する答えはyesと入力すること
 
     ```bash
     wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
@@ -127,7 +124,7 @@
 
   5-2. Makefileからのインストール（自動）
 
-    - Terminal内で下記を実行
+   - Terminal内で下記を実行
 
     ```bash
     make anainstall
@@ -137,7 +134,7 @@
 
   6-1. インストール（手動）
 
-    - Terminal内で下記を実行
+  - Terminal内で下記を実行
 
     ```bash
     pip install keras
@@ -147,7 +144,7 @@
 
   6-2. Makefileからのインストール（自動）
 
-    - Terminal内で下記を実行
+  - Terminal内で下記を実行
 
     ```bash
     make pip
@@ -157,7 +154,7 @@
 
   7-1. 手動で取得
 
-   - [Mnist](https://github.com/fchollet/keras)
+  - [Mnist](https://github.com/fchollet/keras)
 
   7-2. クローン（手動作成）
 
