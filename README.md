@@ -22,18 +22,19 @@
 ### 手順の詳細
 1. Ubuntuの準備
 
- 1-1. Ubuntuのダウンロード
+   1-1. Ubuntuのダウンロード
+   
+   - [Ubuntu download](http://releases.ubuntu.com/14.04/)
+   - [Ubuntu download mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
 
-  - [Ubuntu download](http://releases.ubuntu.com/14.04/)
-  - [Ubuntu download mirror](https://mirror.umd.edu/ubuntu-iso/14.04/)
+   1-2. Ubuntuインストール <<詳細は割愛。下記に各種ツール。>>
+   
+   - USBでインストール
+     - [UNetbootin](https://unetbootin.github.io/)
+     - [Linux Live](https://www.linuxliveusb.com/)
 
- 1-2. Ubuntuインストール <<詳細は割愛。下記に各種ツール。>>
-  - USBでインストール
-    - [UNetbootin](https://unetbootin.github.io/)
-    - [Linux Live](https://www.linuxliveusb.com/)
-
-  - DVDでインストール
-    - [ImgBurn](http://www.imgburn.com/)
+   - DVDでインストール
+     - [ImgBurn](http://www.imgburn.com/)
 
 2. nouveauの削除
   - nouveauの削除は、下記設定後、CUI起動へ進む。
