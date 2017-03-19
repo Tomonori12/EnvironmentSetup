@@ -126,9 +126,9 @@
 
    - Terminal内で下記を実行
 
-    ```bash
-    make anainstall
-    ```
+   ```bash
+   make anainstall
+   ```
 
 6. Pythonで必要なLibraryのインストール
 
