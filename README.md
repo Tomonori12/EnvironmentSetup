@@ -37,19 +37,19 @@
      - [ImgBurn](http://www.imgburn.com/)
 
 2. nouveauの削除
-  - nouveauの削除は、下記設定後、CUI起動へ進む。
+   - nouveauの削除は、下記設定後、CUI起動へ進む。
 
-    **nouveauの削除とCUDAのインストールは連続して行うので、手動でダウンロード・インストールする場合は、先にファイル「cuda_8.0.61_375.26_linux.run」のダウンロードが必要（参照: 3-1&3-2）。ファイル容量1Gb超なので、先にダウンロードしておくことを推奨。**
-  - /etc/modprobe.d/blacklist-nouveau.conf
-  ```bash
-  blacklist nouveau
-  blacklist lbm-nouveau
-  options nouveau modeset=0
-  alias nouveau off
-  alias lbm-nouveau off
-  ```
+     **nouveauの削除とCUDAのインストールは連続して行うので、手動でダウンロード・インストールする場合は、先にファイル「cuda_8.0.61_375.26_linux.run」のダウンロードが必要（参照: 3-1&3-2）。ファイル容量1Gb超なので、先にダウンロードしておくことを推奨。**
+   - /etc/modprobe.d/blacklist-nouveau.conf
+    ```
+    blacklist nouveau
+    blacklist lbm-nouveau
+    options nouveau modeset=0
+    alias nouveau off
+    alias lbm-nouveau off
+    ```
   　上記ファイルはダウンロードも本リポジトリから取得可能。/etc/modprobe.dにコピるだけでOK
- - /etc/modprobe.d/nouveau-kms.conf
+  - /etc/modprobe.d/nouveau-kms.conf
   ```bash
   options nouveau modeset=0
   ```
