@@ -53,13 +53,12 @@
     ```
     options nouveau modeset=0
     ```
-  　上記ファイルはダウンロードも本リポジトリから取得可能。/etc/modprobe.dにコピるだけでOK
-
- - Terminal内で下記を実行
-  ```bash
-  sudo update-initramfs -u
-  sudo reboot
-  ```
+    
+    - Terminal内で下記を実行
+    ```
+    sudo update-initramfs -u
+    sudo reboot
+    ```
 
   - 上記３ステップが完了後、再起動中にgrub画面で「e」を1度だけ押す！
   - 画面に表示される「quiet splash」を「quiet splash **text**」と変更
@@ -68,7 +67,7 @@
 
 3. CUDA 8.0のインストール
   - 【注意】インストール時にコンパイル作業があるため、g++のインストールされている必要がある。インストールされていない場合は下記をTerminalで実行。
-  ```bash
+  ```
   sudo apt-get install g++
   ```
 
