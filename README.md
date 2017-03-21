@@ -5,8 +5,8 @@
  - [GeForce GTX TITAN Black](http://www.nvidia.co.jp/object/geforce-gtx-titan-black-jp.html)
 
 ### 作業の前に…
-　自動で各処理を記載しているMakefileを利用したい場合は、Makefileをダウンロードして任意のフォルダに保存。ただし、バージョン更新によりリンク切れに注意すべし。
-
+　自動で各処理を記載しているMakefileを利用したい場合は、Makefileをダウンロードして任意のフォルダに保存。ただし、バージョン更新によりリンク切れに注意すべし。**下記の作業は基本的にsudo権限でやってください。**
+ 
 　本インストラクションには、手動およびMakefileファイルによる自動セットアップの両スクリプトを記載。Makefileがダメな場合は随時、手動にて対応のこと。
 
 ### 手順のまとめ
