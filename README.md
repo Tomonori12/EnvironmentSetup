@@ -41,24 +41,24 @@
 
      **nouveauの削除とCUDAのインストールは連続して行うので、手動でダウンロード・インストールする場合は、先にファイル「cuda_8.0.61_375.26_linux.run」のダウンロードが必要（参照: 3-1&3-2）。ファイル容量1Gb超なので、先にダウンロードしておくことを推奨。**
    - /etc/modprobe.d/blacklist-nouveau.conf を作成
-    ```
-    blacklist nouveau
-    blacklist lbm-nouveau
-    options nouveau modeset=0
-    alias nouveau off
-    alias lbm-nouveau off
-    ```
+     ```
+     blacklist nouveau
+     blacklist lbm-nouveau
+     options nouveau modeset=0
+     alias nouveau off
+     alias lbm-nouveau off
+     ```
     
     - /etc/modprobe.d/nouveau-kms.conf を作成
-    ```
-    options nouveau modeset=0
-    ```
+      ```
+      options nouveau modeset=0
+      ```
     
     - Terminal内で下記を実行
-    ```
-    sudo update-initramfs -u
-    sudo reboot
-    ```
+      ```
+      sudo update-initramfs -u
+      sudo reboot
+      ```
 
    - 上記３ステップが完了後、**Shift**を押しながら再起動中し、grub画面で**e**を1度だけ押す！
    - 画面に表示される「quiet splash」を「quiet splash **text**」と変更
@@ -67,15 +67,15 @@
 
 3. CUDA 8.0のインストール
   - 【注意】インストール時にコンパイル作業があるため、g++のインストールされている必要がある。インストールされていない場合は下記をTerminalで実行。
-  ```
-  sudo apt-get install g++
-  ```
+    ```
+    sudo apt-get install g++
+    ```
 
-  3-1. ダウンロード（手動）
+    3-1. ダウンロード（手動）
 
-  - [CUDA](https://developer.nvidia.com/cuda-downloads)
-  - ダウンロード場所：　Linux > x86_64 > Ubuntu>>14.04 > runfile (local)
-  - [ダイレクトダウンロードリンク](https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run)
+    - [CUDA](https://developer.nvidia.com/cuda-downloads)
+    - ダウンロード場所：　Linux > x86_64 > Ubuntu>>14.04 > runfile (local)
+    - [ダイレクトダウンロードリンク](https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run)
 
   ![CUDAファイル](Select_Platform.png "Linux > x86_64 > Ubuntu>>14.04 > runfile (local)")
 
