@@ -37,10 +37,12 @@
      - [ImgBurn](http://www.imgburn.com/)
 
 2. nouveauの削除
-   - nouveauの削除は、下記設定後、CUI起動へ進む。
+
+   2-0. nouveauの削除は、下記設定後、CUI起動へ進む。
 
      **nouveauの削除とCUDAのインストールは連続して行うので、手動でダウンロード・インストールする場合は、先にファイル「cuda_8.0.61_375.26_linux.run」のダウンロードが必要（参照: 3-1&3-2）。ファイル容量1Gb超なので、先にダウンロードしておくことを推奨。**
-   - /etc/modprobe.d/blacklist-nouveau.conf を作成
+     
+   2-1. /etc/modprobe.d/blacklist-nouveau.conf を作成
      ```
      blacklist nouveau
      blacklist lbm-nouveau
@@ -49,24 +51,29 @@
      alias lbm-nouveau off
      ```
     
-    - /etc/modprobe.d/nouveau-kms.conf を作成
+   2-2. /etc/modprobe.d/nouveau-kms.conf を作成
       ```
       options nouveau modeset=0
       ```
     
-    - Terminal内で下記を実行
+   2-3. Terminal内で下記を実行
       ```
       sudo update-initramfs -u
       sudo reboot
       ```
 
-   - 上記３ステップが完了後、**Shift**を押しながら再起動中し、grub画面で**e**を1度だけ押す！
-   - 画面に表示される「quiet splash」を「quiet splash **text**」と変更
-   - 上記入力後、**F10** でCUI画面の表示されるので、ユーザー名とパスワードでログイン。
-   - CUDAのインストールへと進む。
+   2-4. 上記３ステップが完了後、再起動中に```ESC```を一度だけ押すとGrub画面へと入る。
+   
+   2-5. Grub画面で```e```を一度押し、grubメニューを表示する。
+   
+   2-6. 画面に表示される「quiet splash $vt_handoff」を「quiet splash $vt_handoff **single**」と変更
+   
+   2-7. 上記入力後、```F10``` でCUI画面の表示される。
+   
+   2-8. ディレクトリを移動し、CUDAのインストールへと進む。
 
 3. CUDA 8.0のインストール
-  - 【注意】インストール時にコンパイル作業があるため、g++のインストールされている必要がある。インストールされていない場合は下記をTerminalで実行。
+    - 【注意】インストール時にコンパイル作業があるため、g++のインストールされている必要がある。インストールされていない場合は下記をTerminalで実行。
     ```
     sudo apt-get install g++
     ```
