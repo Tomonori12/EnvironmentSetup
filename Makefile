@@ -3,6 +3,19 @@
 OUTDIR_KERAS = ../keras
 #INSDIR_KERAS = ./keras
 
+blacklist:
+	echo ""                           > test.txt
+	echo "blacklist nouveau"          >> test.txt
+	echo "blacklist lbm-nouveau"      >> test.txt
+	echo "options nouveau modeset=0"  >> test.txt
+	echo "alias nouveau off"          >> test.txt
+	echo "alias lbm-nouveau off"      >> test.txt
+	sudo mv test.txt /etc/modprobe.d/blacklist-nouveau.conf
+	echo ""                           > test2.txt
+	echo "options nouveau modeset=0"  >> test2.txt
+	sudo mv test2.txt /etc/modprobe.d/nouveau-kms.conf
+	sudo update-initramfs -u
+
 anainstall:
 	wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
 	bash ./Anaconda3-4.3.0-Linux-x86_64.sh
