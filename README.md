@@ -80,21 +80,21 @@
     ![CUDAファイル](Select_Platform.png "Linux > x86_64 > Ubuntu>>14.04 > runfile (local)")
 
     3-2. インストール（手動）
-  - Terminal内で下記を実行
+    - Terminal内で下記を実行
 
-  ```
-  sudo sh cuda_8.0.61_375.26_linux.run
-  ```
+    ```
+    sudo sh cuda_8.0.61_375.26_linux.run
+    ```
 
     3-3. Makefileでインストール（自動）
-  - Terminal内で下記を実行
+    - Terminal内で下記を実行
 
     ```
     make cudainstall
     ```
 
     3-4. Pathを.bashrcに加える。【この.bashrcはhomeディレクトリの.bashrcに書き込む】
-  - .bashrc
+    - .bashrc
 
     ```
     export PATH=/usr/local/cuda-8.0/bin:$PATH
@@ -103,11 +103,11 @@
 
 4. cuDNNのインストール
 
-  4-1. cuDNNのダウンロード（Nvidiaアカウント必須）
+    4-1. cuDNNのダウンロード（Nvidiaアカウント必須）
   
-  - [cuDNN](https://developer.nvidia.com/cudnn)
-  - ダウンロードファイル: cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)
-   ![cuDNN](cuDNN_v5.1_Runtime.png "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)")
+   - [cuDNN](https://developer.nvidia.com/cudnn)
+   - ダウンロードファイル: cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)
+    ![cuDNN](cuDNN_v5.1_Runtime.png "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)")
 
 5. Anacondaのインストール
 
