@@ -136,7 +136,7 @@
     source ~/.bashrc
     ```
 
-  5-2. Makefileからのインストール（自動）
+    5-2. Makefileからのインストール（自動）
 
    - Terminal内で下記を実行
 
@@ -156,7 +156,7 @@
     pip install tensorflow-gpu
     ```
 
-  6-2. Makefileからのインストール（自動）
+  6-2. Makefileからのインストール（自動）
 
   - Terminal内で下記を実行
 
@@ -188,11 +188,24 @@
 8. mnist_cnn.pyを走らせる
 
   - Terminal内で下記を実行
-  ```bash
+  ```
   python ./keras/examples/mnist_cnn.py
   ```
 
 #### ハマりポイント
+  - Q: Grubの画面からCUIが起動しないんですけど？
+  - A: 困りましたね。sudo権限で/etc/defaultの中にあるgrubファイル次に従って編集してください。なお、作業が終了したら元に戻しましょう。
+  
+  ```GRUB_CMDLINE_LINUX_DEGAULT="quiet splash"```を ```GRUB_CMDLINE_LINUX_DEGAULT="quiet splash text"```とします。
+  
+  その後、
+  
+  ```
+  sudo update-grub
+  sudo reboot
+  ```
+  として下さい。なお、作業が終了したら上記手順を遡り、元に戻しましょう。```update-grub```をお忘れなく。
+  
   - Q: pythonが起動しないんですけど？
   - A: おそらく、Anacondaのインストール中にパスを通す選択をYesにしなくて、パスがパスが通っていないのでパスを通そう。原因が怪しい時は、作成されたanaconda3のフォルダを削除してまたインストールした方が楽かも？
 
