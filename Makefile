@@ -3,6 +3,9 @@
 OUTDIR_KERAS = ../keras
 #INSDIR_KERAS = ./keras
 
+message:
+	echo "specify what you want to do"
+	
 blacklist:
 	echo ""                           > test.txt
 	echo "blacklist nouveau"          >> test.txt
