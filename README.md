@@ -166,11 +166,11 @@
     
 7. MNISTデータセットの取得
 
-  7-1. 手動で取得
+    7-1. 手動で取得
 
   - [Mnist](https://github.com/fchollet/keras)
 
-  7-2. クローン（手動作成）
+    7-2. クローン（手動作成）
 
   - Terminal内で下記を実行
 
