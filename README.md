@@ -146,9 +146,9 @@
 
 6. Pythonで必要なLibraryのインストール
 
-  6-1. インストール（手動）
+    6-1. インストール（手動）
 
-  - Terminal内で下記を実行
+   - Terminal内で下記を実行
 
     ```bash
     pip install keras
@@ -156,9 +156,9 @@
     pip install tensorflow-gpu
     ```
 
-  6-2. Makefileからのインストール（自動）
+    6-2. Makefileからのインストール（自動）
 
-  - Terminal内で下記を実行
+   - Terminal内で下記を実行
 
     ```bash
     make pip
