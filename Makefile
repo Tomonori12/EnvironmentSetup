@@ -5,6 +5,10 @@ OUTDIR_KERAS = ../keras
 
 message:
 	echo "specify what you want to do"
+
+basic:
+	sudo apt-get install g++
+	sudo apt-get install git
 	
 blacklist:
 	echo ""                           > test.txt
