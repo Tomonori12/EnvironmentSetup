@@ -189,14 +189,15 @@
     
 8. mnist_cnn.pyを走らせる
 
-  - Terminal内で下記を実行
-  ```
-  python ./keras/examples/mnist_cnn.py
-  ```
+   - Terminal内で下記を実行
+   ```
+   python ./keras/examples/mnist_cnn.py
+   ```
 
 #### ハマりポイント
-  - Q: Grubの画面からCUIが起動しないんですけど？
-  - A: 困りましたね。sudo権限で/etc/defaultの中にあるgrubファイル次に従って編集してください。なお、作業が終了したら元に戻しましょう。
+  - Q: Grubの画面からCUIが起動しないんですけど？
+  
+  - A: 困りましたね。sudo権限で/etc/defaultの中にあるgrubファイル次に従って編集してください。
   
   ```GRUB_CMDLINE_LINUX_DEGAULT="quiet splash"```を ```GRUB_CMDLINE_LINUX_DEGAULT="quiet splash text"```とします。
   
