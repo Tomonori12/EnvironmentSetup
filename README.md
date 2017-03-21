@@ -60,10 +60,10 @@
     sudo reboot
     ```
 
-  - 上記３ステップが完了後、再起動中にgrub画面で「e」を1度だけ押す！
-  - 画面に表示される「quiet splash」を「quiet splash **text**」と変更
-  - 上記入力後、**F10** でCUI画面の表示されるので、ユーザー名とパスワードでログイン。
-  - CUDAのインストールへと進む。
+   - 上記３ステップが完了後、**Shift**を押しながら再起動中し、grub画面で**e**を1度だけ押す！
+   - 画面に表示される「quiet splash」を「quiet splash **text**」と変更
+   - 上記入力後、**F10** でCUI画面の表示されるので、ユーザー名とパスワードでログイン。
+   - CUDAのインストールへと進む。
 
 3. CUDA 8.0のインストール
   - 【注意】インストール時にコンパイル作業があるため、g++のインストールされている必要がある。インストールされていない場合は下記をTerminalで実行。
@@ -82,21 +82,21 @@
   3-2. インストール（手動）
   - Terminal内で下記を実行
 
-  ```bash
+  ```
   sudo sh cuda_8.0.61_375.26_linux.run
   ```
 
   3-3. Makefileでインストール（自動）
   - Terminal内で下記を実行
 
-    ```bash
+    ```
     make cudainstall
     ```
 
   3-4. Pathを.bashrcに加える。【この.bashrcはhomeディレクトリの.bashrcに書き込む】
   - .bashrc
 
-    ```bash
+    ```
     export PATH=/usr/local/cuda-8.0/bin:$PATH
     export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
     ```
