@@ -111,10 +111,10 @@
 
 5. Anacondaのインストール
 
-  5-1. インストール（手動）
+    5-1. インストール（手動）
   
-  - Terminal内で下記を実行
-  - 【注意】インストール途中で表示されるパスに関する答えはyesと入力すること
+   - Terminal内で下記を実行
+   - 【注意】インストール途中で表示されるパスに関する答えはyesと入力すること
 
     ```bash
     wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
