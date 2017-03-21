@@ -150,7 +150,7 @@
 
    - Terminal内で下記を実行
 
-    ```bash
+    ```
     pip install keras
     pip install tensorflow
     pip install tensorflow-gpu
@@ -160,31 +160,33 @@
 
    - Terminal内で下記を実行
 
-    ```bash
+    ```
     make pip
     ```
-    
+
 7. MNISTデータセットの取得
 
     7-1. 手動で取得
-
-  - [Mnist](https://github.com/fchollet/keras)
+    
+    - [Mnist](https://github.com/fchollet/keras)
 
     7-2. クローン（手動作成）
 
-  - Terminal内で下記を実行
+    - Terminal内で下記を実行
 
-    ```bash
+    ```
+    sudo apt-get install -y git
     git clone https://github.com/fchollet/keras
     ```
 
-  7-3. クローン（自動作成）
-
-  - Terminal内で下記を実行
-
-    ```bash
+    7-3. クローン（自動作成）
+    
+    - Terminal内で下記を実行（ただしgitがインストールされてない場合はapt-get install gitをする必要あり）
+    
+    ```
     make git
     ```
+    
 8. mnist_cnn.pyを走らせる
 
   - Terminal内で下記を実行
