@@ -77,23 +77,23 @@
     - ダウンロード場所：　Linux > x86_64 > Ubuntu>>14.04 > runfile (local)
     - [ダイレクトダウンロードリンク](https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run)
 
-  ![CUDAファイル](Select_Platform.png "Linux > x86_64 > Ubuntu>>14.04 > runfile (local)")
+    ![CUDAファイル](Select_Platform.png "Linux > x86_64 > Ubuntu>>14.04 > runfile (local)")
 
-  3-2. インストール（手動）
+    3-2. インストール（手動）
   - Terminal内で下記を実行
 
   ```
   sudo sh cuda_8.0.61_375.26_linux.run
   ```
 
-  3-3. Makefileでインストール（自動）
+    3-3. Makefileでインストール（自動）
   - Terminal内で下記を実行
 
     ```
     make cudainstall
     ```
 
-  3-4. Pathを.bashrcに加える。【この.bashrcはhomeディレクトリの.bashrcに書き込む】
+    3-4. Pathを.bashrcに加える。【この.bashrcはhomeディレクトリの.bashrcに書き込む】
   - .bashrc
 
     ```
