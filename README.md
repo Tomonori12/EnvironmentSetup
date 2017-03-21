@@ -109,6 +109,13 @@
    - ダウンロードファイル: cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)
     ![cuDNN](cuDNN_v5.1_Runtime.png "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)")
 
+    4-2. cuDNNのインストール
+    
+    ```
+    dpkg -i libcudnn5_5.1.10-1+cuda8.0_amd64.deb
+    ```
+    
+    
 5. Anacondaのインストール
 
     5-1. インストール（手動）
