@@ -27,10 +27,10 @@ blacklist:
 	sudo update-initramfs -u
 
 texton:
-	sudo grep -l 'splash' /etc/default/grub | xargs -i.bak -e 's/splash/splash text/g'
+	sudo grep -l 'splash' /etc/default/grub | xargs sed -i.bak -e 's/splash/splash text/g'
 
 textoff:
-	sudo grep -l 'splash' /etc/default/grub | xargs -i.bak -e 's/splash text/splash/g'
+	sudo grep -l 'splash' /etc/default/grub | xargs sed -i.bak -e 's/splash text/splash/g'
 
 
 cudainstall:
